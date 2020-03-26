@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import './global.css';
+
+import Routes from './routes';
+
+// JSX (JavaScript XML)
+//useState no import do lado do react
+//function App() {
+  //const [counter, setCounter] = useState(0);
+
+  // Array [valor, funcaodeAtualização]
+
+  //function increment() {
+    //setCounter(counter + 1);
+  //}
+  /**
+   *    <div>
+    <Header>Contador: {counter}</Header>
+    <button onClick={increment}>Incrementar</button>
     </div>
+    dentro de return
+   */
+function App(){
+  return (
+ <Routes />
   );
 }
 
